@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym - Transform Your Life</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/gym.png">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E31837',
+                        secondary: '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Top Banner -->
+    <div class="bg-primary text-white py-2 px-4 text-center relative">
+        <p class="text-sm">Your fitness goals start here. Join our TRANSFORMATION CHALLENGE with FITPASS Credits.</p>
+        <button class="absolute right-2 top-2 text-white" onclick="this.parentElement.style.display='none'">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-primary">FitLife</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary">Home</a>
+                    <a href="#timetable" class="text-gray-700 hover:text-primary">Timetable</a>
+                    <a href="#clubs" class="text-gray-700 hover:text-primary">Clubs</a>
+                    <a href="#profile" class="text-gray-700 hover:text-primary">Profile</a>
+                    <a href="#" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300">Join Now</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="relative w-full">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                        TRANSFORMATION<br>CHALLENGE 2025
+                    </h1>
+                    <p class="text-xl text-white mb-8">
+                        Transform your body, mind, and lifestyle and see the difference in 12 weeks.<br>
+                        Experience our Body Transformation Program or HYROX Challenge today.
+                    </p>
+                    <div class="space-x-4">
+                        <a href="#" class="bg-primary text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-red-700 transition duration-300">
+                            Join Now
+                        </a>
+                        <a href="#" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition duration-300">
+                            Get Free Trial
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Programs Section -->
+    <section class="py-16 bg-gray-100" id="programs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Programs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Program Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden program-card">
+                    <img src="https://images.pexels.com/photos/4164761/pexels-photo-4164761.jpeg" alt="Personal Training" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Personal Training</h3>
+                        <p class="text-gray-600">Get personalized workout plans and one-on-one guidance from expert trainers.</p>
+                        <a href="#" class="mt-4 inline-block text-primary font-semibold">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Program Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden program-card">
+                    <img src="https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg" alt="Group Classes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Group Classes</h3>
+                        <p class="text-gray-600">Join our energetic group classes including HIIT, Yoga, and Spinning.</p>
+                        <a href="#" class="mt-4 inline-block text-primary font-semibold">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Program Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden program-card">
+                    <img src="https://images.pexels.com/photos/4162472/pexels-photo-4162472.jpeg" alt="Strength Training" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Strength Training</h3>
+                        <p class="text-gray-600">Build strength and muscle with our state-of-the-art equipment and guidance.</p>
+                        <a href="#" class="mt-4 inline-block text-primary font-semibold">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="py-16" id="membership">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Membership Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="border rounded-lg p-8 text-center hover:shadow-lg transition duration-300 membership-card">
+                    <h3 class="text-2xl font-semibold mb-4">Basic</h3>
+                    <p class="text-4xl font-bold mb-6">$49<span class="text-lg text-gray-500">/month</span></p>
+                    <ul class="text-gray-600 mb-8">
+                        <li class="mb-2">Access to gym equipment</li>
+                        <li class="mb-2">Basic fitness assessment</li>
+                        <li class="mb-2">2 group classes per week</li>
+                        <li class="mb-2">Locker room access</li>
+                    </ul>
+                    <a href="#" class="bg-primary text-white px-8 py-3 rounded-full inline-block hover:bg-red-700 transition duration-300">
+                        Choose Plan
+                    </a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="border rounded-lg p-8 text-center bg-primary text-white transform scale-105 membership-card featured">
+                    <h3 class="text-2xl font-semibold mb-4">Premium</h3>
+                    <p class="text-4xl font-bold mb-6">$89<span class="text-lg opacity-75">/month</span></p>
+                    <ul class="mb-8">
+                        <li class="mb-2">All Basic features</li>
+                        <li class="mb-2">Unlimited group classes</li>
+                        <li class="mb-2">1 PT session per month</li>
+                        <li class="mb-2">Nutrition consultation</li>
+                    </ul>
+                    <a href="#" class="bg-white text-primary px-8 py-3 rounded-full inline-block hover:bg-gray-100 transition duration-300">
+                        Choose Plan
+                    </a>
+                </div>
+
+                <!-- Elite Plan -->
+                <div class="border rounded-lg p-8 text-center hover:shadow-lg transition duration-300 membership-card">
+                    <h3 class="text-2xl font-semibold mb-4">Elite</h3>
+                    <p class="text-4xl font-bold mb-6">$149<span class="text-lg text-gray-500">/month</span></p>
+                    <ul class="text-gray-600 mb-8">
+                        <li class="mb-2">All Premium features</li>
+                        <li class="mb-2">4 PT sessions per month</li>
+                        <li class="mb-2">Monthly body composition</li>
+                        <li class="mb-2">VIP locker access</li>
+                    </ul>
+                    <a href="#" class="bg-primary text-white px-8 py-3 rounded-full inline-block hover:bg-red-700 transition duration-300">
+                        Choose Plan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">FitLife</h3>
+                    <p class="text-gray-400">Transform your life with our premium fitness facilities and expert guidance.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Classes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Trainers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>123 Fitness Street, Gym City</li>
+                        <li><i class="fas fa-phone mr-2"></i>+1 234 567 8900</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@fitlife.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 FitLife. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Special Offer Banner -->
+    <div class="bg-primary text-white py-4 text-center">
+        <p class="text-lg">Special New Year Offer! Time remaining: <span id="special-offer-countdown" class="font-bold"></span></p>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
